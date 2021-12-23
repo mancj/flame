@@ -87,6 +87,7 @@ class MovableEmber extends Ember<FollowComponentExample>
 
   @override
   void onCollisionEnd(Collidable other) {
+    super.onCollisionEnd(other);
     if (other is Rock) {
       gameRef.camera.setRelativeOffset(Anchor.center);
     }
