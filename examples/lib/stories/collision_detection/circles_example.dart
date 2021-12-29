@@ -42,7 +42,7 @@ class MyCollidable extends PositionComponent
   @override
   Future<void> onLoad() async {
     await super.onLoad();
-    addHitbox(HitboxCircle());
+    add(HitboxCircle());
     final center = gameRef.size / 2;
     velocity = (center - position)..scaleTo(150);
   }
